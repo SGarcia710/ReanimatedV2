@@ -68,13 +68,11 @@ const Example3 = () => {
               scrollX.value,
               [(i - 1) * width, i * width, (i + 1) * width],
               [0.5, 1, 0.5],
-              Extrapolate.CLAMP,
             );
             const dotOpacity = interpolate(
               scrollX.value,
               [(i - 1) * width, i * width, (i + 1) * width],
               [0.5, 1, 0.5],
-              Extrapolate.CLAMP,
             );
             const dotStyles = useAnimatedStyle(() => {
               return {

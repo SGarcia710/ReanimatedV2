@@ -12,7 +12,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 const Example1 = () => {
-  const opacity = useSharedValue(0);
+  const opacity = useSharedValue(0.5);
 
   useEffect(() => {
     // withTiming will update this value from 0 to 1 in 1000ms
@@ -20,15 +20,18 @@ const Example1 = () => {
     //   duration: 1000,
     // });
     // opacity.value = withRepeat(withDelay(1000, withSpring(1)), -1);
-    opacity.value = withRepeat(withSequence(withSpring(1), withSpring(0)), -1);
+    opacity.value = withRepeat(
+      withSequence(withSpring(1), withSpring(0.5)),
+      -1,
+    );
   }, []);
 
   const animatedStyle = useAnimatedStyle(() => {
     return {
-      opacity: opacity.value,
+      // opacity: opacity.value,
       transform: [
         {
-          scale: interpolate(opacity.value, [0, 1], [0.1, 1]),
+          scale: interpolate(opacity.value, [0, 1], [0.5, 1]),
         },
       ],
     };
@@ -40,15 +43,14 @@ const Example1 = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#212121',
+        backgroundColor: '#f7f1e3',
       }}>
-      <Animated.View
+      <Animated.Image
+        source={require('../assets/images/heart.png')}
         style={[
           {
-            width: 100,
-            height: 100,
-            borderRadius: 100 / 2,
-            backgroundColor: '#706fd3',
+            width: 150,
+            height: 150,
           },
           animatedStyle,
         ]}

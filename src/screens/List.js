@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 20,
     paddingBottom: 20,
+    backgroundColor: '#f7f1e3',
   },
   button: {
     padding: 16,
-    backgroundColor: '#45aaf2',
+    backgroundColor: '#706fd3',
     width: '100%',
     borderRadius: 8,
     flexDirection: 'row',

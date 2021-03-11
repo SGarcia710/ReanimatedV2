@@ -8,7 +8,16 @@ const Stack = createStackNavigator();
 const index = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#706fd3',
+          },
+          headerTitleStyle: {
+            color: 'white',
+          },
+          headerTintColor: 'white',
+        }}>
         {React.Children.toArray(
           SCREENS.map((screen) => {
             return (
