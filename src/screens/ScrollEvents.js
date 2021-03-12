@@ -3,7 +3,6 @@ import {View} from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
   useAnimatedScrollHandler,
   interpolateColor,
 } from 'react-native-reanimated';

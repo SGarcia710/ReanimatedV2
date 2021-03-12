@@ -9,5 +9,6 @@ export {default as Example8} from './Accordions';
 export {default as Example9} from './TikTokDisc';
 export {default as Example10} from './DragAndDrop2';
 export {default as Transitions} from './Transitions';
+export {default as Slider} from './Slider';
 
 export {default as List} from './List';

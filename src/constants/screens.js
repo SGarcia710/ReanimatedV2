@@ -11,6 +11,7 @@ import {
   Example9,
   Example10,
   Transitions,
+  Slider,
 } from '../screens';
 
 const SCREENS = [
@@ -57,6 +58,11 @@ const SCREENS = [
     screenName: 'Transitions',
     text: 'Transitions',
     component: Transitions,
+  },
+  {
+    screenName: 'Slider',
+    text: 'Slider',
+    component: Slider,
   },
 ];
 

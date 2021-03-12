@@ -1,15 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {TouchableWithoutFeedback, View} from 'react-native';
 import Animated, {
-  interpolate,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
-  withTiming,
-  withDelay,
-  withRepeat,
-  withSequence,
-  Easing,
 } from 'react-native-reanimated';
 
 const Example1 = () => {

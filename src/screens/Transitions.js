@@ -1,20 +1,11 @@
 import React, {useState} from 'react';
 import {useEffect} from 'react';
-import {
-  View,
-  Image,
-  Dimensions,
-  StyleSheet,
-  Button,
-  TouchableOpacity,
-  Text,
-} from 'react-native';
+import {View, Image, Dimensions, TouchableOpacity, Text} from 'react-native';
 import Animated, {
   interpolate,
   useAnimatedStyle,
   useDerivedValue,
   useSharedValue,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 

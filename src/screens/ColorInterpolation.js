@@ -3,7 +3,6 @@ import {View, useWindowDimensions, StyleSheet, Text} from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
   useAnimatedScrollHandler,
   interpolateColor,
   interpolate,
@@ -64,17 +63,19 @@ const Example3 = () => {
         }}>
         {React.Children.toArray(
           colors.map((_, i) => {
-            const dotScale = interpolate(
-              scrollX.value,
-              [(i - 1) * width, i * width, (i + 1) * width],
-              [0.5, 1, 0.5],
-            );
-            const dotOpacity = interpolate(
-              scrollX.value,
-              [(i - 1) * width, i * width, (i + 1) * width],
-              [0.5, 1, 0.5],
-            );
             const dotStyles = useAnimatedStyle(() => {
+              const dotScale = interpolate(
+                scrollX.value,
+                [(i - 1) * width, i * width, (i + 1) * width],
+                [0.5, 1, 0.5],
+                Extrapolate.CLAMP,
+              );
+              const dotOpacity = interpolate(
+                scrollX.value,
+                [(i - 1) * width, i * width, (i + 1) * width],
+                [0.5, 1, 0.5],
+                Extrapolate.CLAMP,
+              );
               return {
                 opacity: dotOpacity,
                 transform: [
