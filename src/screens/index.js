@@ -10,5 +10,7 @@ export {default as TikTokDisc} from './TikTokDisc';
 export {default as DragAndDrop2} from './DragAndDrop2';
 export {default as Transitions} from './Transitions';
 export {default as Slider} from './Slider';
+export {default as Breathe} from './Breathe';
+export {default as TinderSwipe} from './TinderSwipe';
 
 export {default as List} from './List';

@@ -27,16 +27,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#121212',
   },
   sheetContainer: {
     position: 'absolute',
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'white',
+    backgroundColor: '#1E1E1E',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    shadowColor: '#000',
+    shadowColor: '#1E1E1E',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   sheetDragBar: {
-    backgroundColor: '#212121',
+    backgroundColor: 'white',
     borderRadius: 16,
     width: 34,
     height: 6,
@@ -98,7 +99,7 @@ const Example5 = () => {
       <PanGestureHandler onGestureEvent={gestureHandler}>
         <Animated.View style={[style, styles.sheetContainer]}>
           <View style={styles.sheetDragBar} />
-          <Text>Sheet</Text>
+          <Text style={{color: 'white'}}>Sheet</Text>
         </Animated.View>
       </PanGestureHandler>
     </>

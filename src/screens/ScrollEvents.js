@@ -22,7 +22,7 @@ const Example3 = () => {
       backgroundColor: interpolateColor(
         scrollY.value,
         [-50, 0, 50],
-        ['#74b9ff', '#212121', '#a29bfe'],
+        ['#74b9ff', '#121212', '#a29bfe'],
       ),
     };
   });

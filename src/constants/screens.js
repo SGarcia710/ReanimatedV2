@@ -12,11 +12,21 @@ import {
   TikTokDisc,
   Transitions,
   Slider,
+  Breathe,
+  TinderSwipe,
 } from '../screens';
 
 const SCREENS = [
-  {screenName: 'List', text: 'Index', component: List},
-  {screenName: 'Basis', text: 'Basis', component: Basis},
+  {
+    screenName: 'List',
+    text: 'Index',
+    component: List,
+  },
+  {
+    screenName: 'Basis',
+    text: 'Basis',
+    component: Basis,
+  },
   {
     screenName: 'DragAndDrop',
     text: 'Drag and Drop with return',
@@ -24,16 +34,24 @@ const SCREENS = [
   },
   {
     screenName: 'DragAndDrop2',
-    text: 'Drag and Drop to new position',
+    text: 'Drag and Drop to new position with decay(velocity)',
     component: DragAndDrop2,
   },
-  {screenName: 'ScrollEvents', text: 'Scroll Events', component: ScrollEvents},
+  {
+    screenName: 'ScrollEvents',
+    text: 'Scroll Events and Color interpolation',
+    component: ScrollEvents,
+  },
   {
     screenName: 'ColorInterpolation',
     text: 'Slider with Color Interpolation and Indicator',
     component: ColorInterpolation,
   },
-  {screenName: 'BottomSheet', text: 'Bottom Sheet', component: BottomSheet},
+  {
+    screenName: 'BottomSheet',
+    text: 'Bottom Sheet',
+    component: BottomSheet,
+  },
   {
     screenName: 'BottomTabNavigator',
     text: 'Animated Bottom Tab Navigator',
@@ -41,7 +59,7 @@ const SCREENS = [
   },
   {
     screenName: 'Buttons',
-    text: 'Buttons',
+    text: 'Button animation',
     component: Buttons,
   },
   {
@@ -56,13 +74,23 @@ const SCREENS = [
   },
   {
     screenName: 'Transitions',
-    text: 'Transitions',
+    text: 'Cards Transitions',
     component: Transitions,
   },
   {
     screenName: 'Slider',
-    text: 'Slider',
+    text: 'Slider with blurred background',
     component: Slider,
+  },
+  {
+    screenName: 'Breathe',
+    text: 'Breathe animation from Apple Watch',
+    component: Breathe,
+  },
+  {
+    screenName: 'TinderSwipe',
+    text: 'Tinder Swipe Animation',
+    component: TinderSwipe,
   },
 ];
 

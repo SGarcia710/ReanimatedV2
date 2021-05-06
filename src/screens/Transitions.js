@@ -36,6 +36,7 @@ const Transitions = () => {
         position: 'relative',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#121212',
       }}>
       {React.Children.toArray(
         CARDS.map((card, index) => (
@@ -47,7 +48,7 @@ const Transitions = () => {
         style={{
           position: 'absolute',
           bottom: 100,
-          backgroundColor: '#706fd3',
+          backgroundColor: '#FEC68A',
           paddingVertical: 14,
           paddingHorizontal: 28,
           borderRadius: 4,
@@ -55,7 +56,7 @@ const Transitions = () => {
         onPress={() => setToggled(!toggled)}>
         <Text
           style={{
-            color: 'white',
+            color: '#1E1E1E',
           }}>
           Toggle
         </Text>

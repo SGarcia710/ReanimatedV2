@@ -55,7 +55,7 @@ const DragAndDrop2 = () => {
     <View
       style={{
         flex: 1,
-        backgroundColor: '#f7f1e3',
+        backgroundColor: '#121212',
       }}>
       <PanGestureHandler {...{onGestureEvent}}>
         <Animated.Image

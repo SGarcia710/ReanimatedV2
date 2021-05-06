@@ -22,7 +22,7 @@ const Example1 = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#212121',
+        backgroundColor: '#121212',
       }}>
       <TouchableWithoutFeedback
         onPress={() => {

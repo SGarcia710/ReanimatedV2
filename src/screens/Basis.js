@@ -41,7 +41,7 @@ const Example1 = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f7f1e3',
+        backgroundColor: '#121212',
       }}>
       <Animated.Image
         source={require('../assets/images/heart.png')}

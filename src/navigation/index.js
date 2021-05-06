@@ -11,7 +11,7 @@ const index = () => {
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#706fd3',
+            backgroundColor: '#121212',
           },
           headerTitleStyle: {
             color: 'white',
